@@ -14,12 +14,12 @@
 // METODO BASE STATICO
 	SELECT *                
 	FROM `students`
-	WHERE `date_of_birth` <= '1992-06-15';
+	WHERE `date_of_birth` <= '1991-06-15';
 
 //METODO AVANZATO 
 	SELECT *
 	FROM `students`
-	WHERE (YEAR(CURDATE())-YEAR(`date_of_birth`)) - (RIGHT(CURDATE(),5) <= RIGHT(`date_of_birth`,5)) > 30;
+	WHERE (YEAR(CURDATE()) - YEAR(`date_of_birth`)) - (RIGHT(CURDATE(),5) <= RIGHT(`date_of_birth`,5)) > 30;
 
 
 4. Selezionare tutti i corsi del primo semestre del primo anno di un qualsiasi corso di
